@@ -1,0 +1,34 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Dogs.Models;
+
+namespace Dogs.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+
+    public class cachorroController : Controller
+
+    private static List<Cadastro_dog> lista = new List<Cadastro_dog>{
+
+        new Cadastro_dog
+        {
+            id = 1,
+            name = "Thory"
+            age = "2"
+        }
+
+    };
+
+    [HttpGet("{id}")] { }
+
+
+    [HttpPost("{id}")] { }
+
+
+    [HttpPut("{id}")] { }
+
+
+    [HttpDelete("{id}")] { }
+
+}
